@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es2017"
+    ],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "app",
+    "paths": {
+      "@models/*": [
+        "models/*"
+      ],
+      "@svg/*": [
+        "assets/svg/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@hoc/*": [
+        "hoc/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@atoms/*": [
+        "views/atoms/*"
+      ],
+      "@molecules/*": [
+        "views/molecules/*"
+      ],
+      "@organisms/*": [
+        "views/organisms/*"
+      ],
+      "@templates/*": [
+        "views/templates/*"
+      ],
+      "@screens/*": [
+        "views/screens/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}

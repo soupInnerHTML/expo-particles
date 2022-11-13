@@ -1,0 +1,12 @@
+{
+ "auth": {
+    "invalid-email": {
+      "message": "There is problem with sending email on your address",
+      "description": "Address is invalid"
+    },
+    "user-not-found": {
+      "message": "User not found",
+      "description": "Probably this address wasn't registered yet."
+    }
+  }
+}
