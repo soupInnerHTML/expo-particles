@@ -15,7 +15,7 @@ target 'Particles' do
   config = use_native_modules!
 
 #     use_frameworks!
-#   use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
+  use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
 
   # Flags change depending on the env values.
   flags = get_default_flags()
@@ -24,6 +24,7 @@ target 'Particles' do
     :path => config[:reactNativePath],
     :hermes_enabled => true,
     :fabric_enabled => flags[:fabric_enabled],
+    :flipper_configuration => FlipperConfiguration.enabled,
     # An absolute path to your application root.
     :app_path => "#{Dir.pwd}/.."
   )
@@ -32,7 +33,7 @@ target 'Particles' do
   # Note that if you have use_frameworks! enabled, Flipper will not work
   #
   # if !ENV['CI']
-    use_flipper!()
+#     use_flipper!()
   # end
 
   post_install do |installer|
