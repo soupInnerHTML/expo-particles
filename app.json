@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Particles",
+    "slug": "particles",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#242B46"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      "@notifee/react-native",
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "googleServicesFile": "./firebase/GoogleService-Info.plist",
+      "bundleIdentifier": "io.github.soupinnerhtml.particles"
+    },
+    "android": {
+      "googleServicesFile": "./firebase/google-services.json",
+      "package": "io.github.soupinnerhtml.particles",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a73ad9cc-6b68-4601-8741-0b8e1d3af138"
+      }
+    }
+  }
+}
