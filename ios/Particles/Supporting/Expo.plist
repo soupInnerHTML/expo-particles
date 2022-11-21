@@ -8,9 +8,9 @@
     <true/>
     <key>EXUpdatesLaunchWaitMs</key>
     <integer>0</integer>
-    <key>EXUpdatesSDKVersion</key>
-    <string>46.0.0</string>
     <key>EXUpdatesURL</key>
-    <string>https://exp.host/@ruby___/particles</string>
+    <string>https://u.expo.dev/a73ad9cc-6b68-4601-8741-0b8e1d3af138</string>
+    <key>EXUpdatesRuntimeVersion</key>
+    <string>1.0.0</string>
   </dict>
 </plist>
